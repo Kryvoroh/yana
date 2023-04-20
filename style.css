@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: #333;
+    background-color: rgb(250, 158, 158);
+}
+.main-section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+p {
+    font-size: 2rem;
+}
+
+.main2-section {
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 3s;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+}
+
+
+.popup-section {
+    width: 90%;
+    padding: 6rem;
+    background-color: white;
+    position: fixed;
+    display: none;
+    transition: all 1s;
+    animation: 5s ease;
+}
+
+.btn,
+.btn:link,
+.btn:visited  {
+        margin-top: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1rem; 
+        border: none;
+        cursor: pointer;
+}
+.btn--green {
+    background-color: #55c57a;
+    color: white;
+}
+
+.photo1 {
+    width: 75%;
+    height: 75%;
+    margin-top: 1rem;
+}
+

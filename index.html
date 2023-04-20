@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-section">
+        <p> Ну наконец-то! Осталась прям писечка писечка. Ускоряемся и уверенно идем к цели. Я люблю тебя! Кстати, вот тот листочек :)</p>
+        <img class="photo1" src="./img/1.jpg" alt="photo1">
+        <img class="photo1" src="./img/2.jpg" alt="photo1">
+        <button id="butt" onclick="press()" class="btn btn--green">Нажимай</button>
+    </div>
+    <div class="main2-section"> 
+        <div id="popup" class="popup-section">
+            Тебе только что пришло в телеграм кое-что от любимого! Если ты найдешь отличия - молодец. Ты нашла свой подарок, ахах
+        </div>
+    </div>
+</body>
+    <script>
+        function press() {
+           var value = document.getElementsByClassName('popup-section')[0];
+           value.style.display = 'block';
+           document.getElementsByClassName('main-section')[0].style.visibility = "hidden";
+        }
+    </script>
+</html>
